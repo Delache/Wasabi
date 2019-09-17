@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 /* PRESENTATION */
 
@@ -17,6 +18,85 @@
     justify-content: center;
     font-size: 1em;
     margin-bottom: 3em;
+=======
+body {
+  margin: 0;
+}
+
+.nav {
+  position: fixed;
+  right: 0;
+  top:0;
+  height: 100%;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 2;
+  margin:0;
+  display: flex;
+  color: #f00;
+}
+
+#menu {
+  background: black;
+  width: 200px;
+  padding: 10px 30px;
+  display:inline-block;
+  transition-duration: .3s;
+  border:1px solid black;
+  border-radius:20px 0 0 20px;
+}
+
+
+#menu:not(:target) {
+  transform: translate3d(180px, 0, 0);
+  height: 60px;
+}
+
+#menu:target {
+  transform: translate3d(0, 0, 0);
+  height: 100%;
+}
+
+#visible, #hidden {
+  height: 100px;
+  text-align: left;
+  display: block;
+  margin-right: -30px;
+  opacity:0.5;
+}
+
+#nav:target #visible, #nav:not(:target) #hidden {
+  display: none;
+}
+
+#menu:target #visible {
+  display: none;
+}
+
+#hidden{
+  padding:10px;
+}
+#visible{
+  padding-top: 5px;
+  margin-left: -15px;
+}
+
+
+hr{
+  width: 95px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+
+.main {
+  width: 90%;
+  margin: auto;
+>>>>>>> burgerMenu
 }
 
 .welcomeContent p {
