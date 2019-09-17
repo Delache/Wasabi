@@ -20,7 +20,7 @@ body {
   width: 200px;
   padding: 10px 30px;
   display:inline-block;
-  transition-duration: .5s;
+  transition-duration: .3s;
   border:1px solid black;
   border-radius:20px 0 0 20px;
 }
@@ -41,6 +41,7 @@ body {
   text-align: left;
   display: block;
   margin-right: -30px;
+  opacity:0.5;
 }
 
 #nav:target #visible, #nav:not(:target) #hidden {
