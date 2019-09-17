@@ -1,24 +1,3 @@
-<<<<<<< HEAD
-
-/* PRESENTATION */
-
-/*Reste les medias queries et peaufiner selon vos retours*/
-
-.wasabiTitle {
-
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0;
-}
-
-
-
-.wasabiSubtitle {
-    display: flex;
-    justify-content: center;
-    font-size: 1em;
-    margin-bottom: 3em;
-=======
 body {
   margin: 0;
 }
@@ -50,6 +29,8 @@ body {
 #menu:not(:target) {
   transform: translate3d(180px, 0, 0);
   height: 60px;
+  text-align: right;
+
 }
 
 #menu:target {
@@ -62,7 +43,6 @@ body {
   text-align: left;
   display: block;
   margin-right: -30px;
-  opacity:0.5;
 }
 
 #nav:target #visible, #nav:not(:target) #hidden {
@@ -86,29 +66,38 @@ hr{
   width: 95px;
 }
 
-.nav a {
+.nav a, .produits a{
   color: white;
   text-decoration: none;
   display: block;
 }
 
-
 .main {
   width: 90%;
   margin: auto;
->>>>>>> burgerMenu
+}
+.produits{
 }
 
-.welcomeContent p {
-    text-align: justify;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.3;
+.itemProduct{
+  color: white;
+  background-color: black;
+  line-height: 3;
+  border-radius: 15px;
+  text-align: center;
+  display:block;
+}
+#sushisMenu:not(:target){
+  display:none;
+}
+#sushisMenu:target, #makisMenu:target,#sashimisMenu:target{
+  display:visible;
+  display:flex;
 }
 
-.welcomeContent {
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+.illustrProduits{
+  display: none;
+}
+.imgMenu{
+  flex: 0.5;
 }
