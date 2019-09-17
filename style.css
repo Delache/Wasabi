@@ -113,7 +113,7 @@ hr{
 
 .restaurant {
 
-  display: block;
+  	display: block;
 }
 
 .restaurant h2 {
@@ -130,77 +130,78 @@ hr{
 
 .theChief img {
 
-  width: 90%;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  	width: 90%;
+  	display: flex;
+  	margin-left: auto;
+  	margin-right: auto;
 }
 
 .theChief p {
 
-  display: flex;
-  justify-content: center;  
+  	display: flex;
+  	justify-content: center;  
 }
 
 
 /* **************UP FEATURE***************** */
 
 
+
 #up {
-  position: fixed;
-  bottom: 5px;
-  right:5px;
+  	position: fixed;
+  	bottom: 5px;
+  	right:5px;
   
-  background : rgb(0, 0, 0);
-  background : rgba(0, 0, 0, 0.8);
+  	background : rgb(0, 0, 0);
+  	background : rgba(0, 0, 0, 0.8);
   
     width: 50px;
     height: 50px;
   
   
-  display: block;
-  text-decoration: none;
+  	display: block;
+  	text-decoration: none;
   
-  -webkit-border-radius: 50%;
+  	-webkit-border-radius: 50%;
     -moz-border-radius: 50%;
   
     border-radius: 50%;
-     
+
 
 }
 
 
 #up:hover {
-    background: rgba(0, 0, 0, 0.9);
+	background: rgba(0, 0, 0, 0.9);
 }
 
 .chevron:hover {
- opacity: 0.60;
-  position: fixed;
-  bottom: 22px;
-  right: 19px;
+ 	opacity: 0.60;
+  	position: fixed;
+  	bottom: 22px;
+  	right: 19px;
   
 }
 
-
 .chevron {
-  opacity: 0.40;
-  color: white;
-  position: fixed;
-  bottom: 13px;
-  right: 19px;
+  	opacity: 0.40;
+  	color: white;
+  	position: fixed;
+  	bottom: 13px;
+  	right: 19px;
     border-style: solid;
     border-width: 0.10em 0.10em 0 0;
     content: '';
     display: block;
-  padding: 10px;
+  	padding: 10px;
     height: 0;
     transform: rotate(-45deg);
     vertical-align: top;
     width: 0;
-  transition-duration: 0.8s;
+  	transition-duration: 0.8s;
   
 }
+
 
 
 
@@ -269,4 +270,5 @@ input {
            
   }
   
+
 
