@@ -9,7 +9,6 @@ main{
 }
 h1, h2, h3{
 }
-
 h2 {
   text-align: center;
 }
@@ -55,13 +54,11 @@ h1{
   display: inline-block;
   transition-duration: .2s;
   border:1px solid black;
-
 }
 #menu:not(:target) {
   transform: translate3d(180px, 0, 0);
   height: 60px;
   text-align: right;
-
 }
 #menu:target {
   transform: translate3d(0, 0, 0);
