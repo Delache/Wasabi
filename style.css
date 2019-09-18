@@ -9,7 +9,7 @@ main{
   width: 90%;
 }
 /* modif faites par Philippe : font-family + letter spacing */
-h1, h2, h3, p{
+h1, h2, h3{
   font-family: 'Julee', cursive;
   letter-spacing: 1.2px;
 }
@@ -25,10 +25,7 @@ header p {
 
 /* Header
 --------------------------------------------------------------------------------------*/
-header{
-  height: 150px;
-  margin-bottom: 20px;
-}
+
 #welcome{
   position: absolute;
   top: 5px;
@@ -45,9 +42,9 @@ header{
   font-size: 3vw;
 }
 .banniere{
-  height: 250px;
   width: 100%;
   overflow: hidden;
+
 }
 .fuji{
   position: relative;
@@ -114,8 +111,8 @@ header{
   margin-left: -15px;
 
 }
-#menu hr{
-  width: 95px;
+hr{
+  width: 50%;
 }
 
 .nav a,.navDesk a, .products a{
@@ -131,7 +128,6 @@ header{
   width: 90%;
   margin: auto;
 }
-
 /* Products
 ----------------------------------------------------------------------------------------*/
 .produits{
@@ -189,7 +185,7 @@ header{
   position:relative;>
   height:0;
   }
-  
+
 /* Philippe : ajout style map-reponsive partie 2*/
   .map-responsive iframe {
   left:0;
@@ -334,43 +330,46 @@ footer{
   }
 
   /*Banniere*/
-  header{
-    height: 374px;
-  }
+
   .banniere{
-    height: 100%;
+    height: auto;
+    max-height: 300px;
   }
 
-  .welcome  {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+  /* Menu*/
+  .nav {
+    display:none;
   }
-
-   /*Restaurant 
-   -----------------------------------------------------------------------------------*/
-
-   .restaurantContainer {
-    display: flex;
-    justify-content: space-between;
+  .navDesk{
+    display:flex;
+    height: 50px;
+    background-color: black;
+    justify-content: space-around;
+    vertical-align: middle;
+    margin-top: -5px;margin-bottom: 30px;
   }
-  
-  #restaurant p {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
+  .navDesk a{
+    display: block;
+    margin: auto;
   }
-  .theChief {
-    width: 45%;
+  hr{
+    display: none;
   }
-  .mainRoom {
-    width: 45%;
-  }
-
+.contact {
+  display: flex;
+  flex-direction: row;
+}
+.address {
+  width:30%;
+}
+.map-responsive{
+  width:60%;
+}
 /*Footer
 -----------------------------------------------------------------------------------*/
   footer{
     height: 16vw;
+
   }
   .netWork{
     padding-top: 2vw
@@ -387,34 +386,4 @@ footer{
   .faq a:hover{
     color: silver;
   }
-  /* Menu*/
-  .nav {
-    display:none;
-  }
-  .navDesk{
-    margin:-30px 0 30px 0;
-    display:flex;
-    height: 50px;
-    background-color: black;
-    justify-content: space-around;
-    vertical-align: middle;
-  }
-  .navDesk a{
-    display:block;
-    margin: auto;
-  }
-  /* Philippe : ajout du style "contact"*/ 
-   
-.contact {
-  display: flex;
-  flex-direction: row;
 }
-.address {
-  width:30%;
-}
-.map-responsive{
-  width:60%;
-}
-/* fin des ajouts Philippe*/
-}
-
