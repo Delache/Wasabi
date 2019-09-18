@@ -16,10 +16,10 @@
       <h1 id="welcome">Wasabi Café</h1>
       <p class="ss-titre">Restaurant Japonais</p>
     </div>
-   <nav class="navDesk">
-      <a href="#products">Nos produits</a>
-      <a href="#restaurant">Le restaurant</a>
-      <a href="#contactUs">Contact</a>
+    <nav class="navDesk">
+      <a href="#products"><h3>Nos produits</h3></a>
+      <a href="#restaurant"><h3>Le restaurant</h3></a>
+      <a href="#contactUs"><h3>Contact</h3></a>
     </nav>
   </header>
 
@@ -29,20 +29,20 @@
       <a href="#menu" id="visible"><img src="Data/hamber1.png" alt="hamber"></a>
       <a href="#" id="hidden">×</a>
       <div class="linkNav">
-        <h2><a href="#welcome">Wasabi</a></h2><hr>
+        <h2><a href="#welcome">Wasabi Café</a></h2>
         <a href="#products">Nos produits</a><hr>
         <a href="#restaurant">Le restaurant</a><hr>
-        <a href="#contactUs">Contact</a><hr>
+        <a href="#contactUs">Contact</a>
       </div>
     </div>
   </nav>
 
   <main>
     <section class="welcome">
-      <h2>Wasabi Café</h2> est un restaurant qui propose une <strong>cuisine japonaise traditionnelle</strong> depuis plus de 12 ans dans le quartier Bastide de Bordeaux, proche du pont de pierre.</p></section><hr/>
+      <h2>Wasabi Café</h2><p> est un restaurant qui propose une <strong>cuisine japonaise traditionnelle</strong> depuis plus de 12 ans dans le quartier Bastide de Bordeaux, proche du Pont de Pierre.</p></section><hr/>
       <p>Entre amis ou en famille venez déguster sur place nos sushis, nos makis et autres produits japonais fait maison et à base de produits frais.</p><hr/>
       <p>Sur <strong>place ou à emporter</strong> commandez nos menus ou nos plats à la carte, ainsi que notre formule rapide du midi, pour les personnes ayant peu de temps pour leur pause déjeuner.</p><hr/>
-      <p>Notre restaurant est ouvert du <strong>lundi au vendredi</strong> midi et soir et le samedi soir. L'été, profitez de la terrasse pour déguster nos menus avec une bonne bière japonnaise.</p>
+      <p>Notre restaurant est ouvert du <strong>lundi au vendredi</strong> midi et soir et <strong>le samedi soir</strong>. L'été, profitez de la terrasse pour déguster nos menus avec une bonne bière japonnaise.</p><hr/>
     </section>
 
     <section class="products">
@@ -84,11 +84,11 @@
     </section>
 
     <section id="contactUs">
-      <h2>Contactez-nous</h2>
+      <h2>Où nous trouver?</h2>
       <div class="contact">
         <div class="address">
           <p>3 place Stalingrad <br> 33100 Bordeaux<br>
-          &#9742; 05 56 32 28 44<br>
+            &#9742; 05 56 32 28 44<br>
           contact@wasabicafe.fr</p>
         </div>
 
@@ -97,26 +97,28 @@
         </div>
       </div>
       <form>
-        <div class="form">
-          <input id="name" name="name" type="text" placeholder="Nom:">
-          <input id="mail" name="mail" type="email" placeholder="@:">
-          <input id="phone" name="phone" type="tel" placeholder="Téléphone:">
-           <textarea class="contact" rows="5" placeholder="Your message"></textarea>
-          <input type="submit" value="Envoyer" class="submit">
-        </div>
+        <fieldset>
+          <legend><h2>Pour toute demande:</h2></legend>
+          <div class="form">
+            <input id="name" name="name" type="text" placeholder="Nom:" requiered autofucus>
+            <input id="mail" name="mail" type="email" placeholder="@:" requiered>
+            <input id="phone" name="phone" type="tel" placeholder="Téléphone:">
+            <textarea class="contact" rows="5" placeholder="Your message" requiered></textarea>
+            <input type="submit" value="Envoyer" class="submit">
+          </div>
+        </fielset>
       </form>
     </section>
   </main>
   <footer>
     <div class="netWork">
-     <a href="https://deliveroo.fr/fr/menu/bordeaux/bordeaux-la-bastide/wasabi-cafe" title="Deliveroo"><img class="deliveroo" src="https://i.postimg.cc/PJY0mQsJ/deliveroo.png"></a>
-     <a href="https://fr-fr.facebook.com/pg/wasabicafebdx/posts/" title="Facebook"><img class="facebook" src="https://i.postimg.cc/k5SGRLYd/icons8-facebook-48.png"></a>
-     <a href="https://www.yelp.fr/biz/wasabi-caf%C3%A9-bordeaux-2" title="Yelp"><img class="yelp" src="https://i.postimg.cc/9QT754P2/yelp.png"></a>
-     </div>
-     <div class="faq">
+      <a href="https://deliveroo.fr/fr/menu/bordeaux/bordeaux-la-bastide/wasabi-cafe" title="Deliveroo"><img class="deliveroo" src="https://i.postimg.cc/PJY0mQsJ/deliveroo.png"></a>
+      <a href="https://fr-fr.facebook.com/pg/wasabicafebdx/posts/" title="Facebook"><img class="facebook" src="https://i.postimg.cc/k5SGRLYd/icons8-facebook-48.png"></a>
+      <a href="https://www.yelp.fr/biz/wasabi-caf%C3%A9-bordeaux-2" title="Yelp"><img class="yelp" src="https://i.postimg.cc/9QT754P2/yelp.png"></a>
+    </div>
+    <div class="faq">
       <a href="#" title="Des questions?">FAQ</a>
     </div>
   </footer>
-
-  </body>
+</body>
 </html>

@@ -1,25 +1,40 @@
-
 body {
   margin: 0;
   color:  black;
-  background-color: white;
+  background-color: #f2fffd;
 }
 main{
   margin: auto;
   width: 90%;
+  margin-bottom: 30px;
 }
 /* modif faites par Philippe : font-family + letter spacing */
 h1, h2, h3{
   font-family: 'Julee', cursive;
   letter-spacing: 1.2px;
 }
-h2 {
+h2{
+  background: white;
+  margin-left: 15%;
+  margin-right: 15%;
   text-align: center;
-
+  border: 1px solid black;
 }
-/* Philippe : ajout style "Restaurant Japonais" */
-header p {
+.welcome h2, .nav h2{
+  font-family: 'Julee', cursive;
+  font-style: 20px;
+  letter-spacing: 1.2px;
+  text-align: left;
+  background: none;
+  margin:0;
+  border:none;
+}
+p {
   font-family: 'Titillium Web', sans-serif;
+  text-align: justify;
+}
+.welcome :nth-child(2){
+  display: inline;
 }
 
 /* Header
@@ -142,11 +157,11 @@ hr{
 }
 .itemProduct{
   color: white;
-  background-color: black;
-  line-height: 3;
+  background: linear-gradient(black,grey, black);
   border-radius: 15px;
   text-align: center;
   display:block;
+  z-index: 1;
 }
 #sushisMenu:not(:target){
   display:none;
@@ -154,71 +169,69 @@ hr{
 #sushisMenu:target, #makisMenu:target,#sashimisMenu:target{
   display:visible;
   display:flex;
+  justify-content: space-around;
 }
 .illustrProduits{
   display: none;
 }
 .imgMenu{
-  flex: 0.5;
+  margin:0 4px;
+  border:2px solid grey;
+  box-shadow: 2px 2px grey;
+  border-radius: 30px;
 }
 
 /*Restaurant
 ---------------------------------------------------------------------------------------*/
-.theChief{
+.theChief, .mainRoom{
+  border: 2px solid grey;
+  border-radius:5px;
+  margin-bottom:10px;
 }
-#restaurant p {
-  text-align : justify;
-}
-
-.theChief{
-
-}
-.mainRoom p {
-  margin-bottom: 0;
+.theChief p, .mainRoom p{
+  padding:0px 20px;
 }
 
 .imgRestaurant{
   width: 100%;
+  border-bottom: 2px solid grey;
 }
 
 /*ContactUs
 ----------------------------------------------------------------------------------------*/
-.contact{
-}
-/* Philippe : ajout style map-responsive" partie 1 */
 .map-responsive {
   overflow:hidden;
   padding-bottom:56.25%;
   position:relative;>
   height:0;
-  }
-
-/* Philippe : ajout style map-reponsive partie 2*/
-  .map-responsive iframe {
-  left:0;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
-  }
+}
+.map-responsive iframe {
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
 .form{
   display:flex;
   flex-direction: column;
   margin: 15px;
-  margin-right: 25px;
 }
 .form >*{
   margin-bottom: 15px;
-  border:2px solid grey;
+  border:1px solid grey;
   border-radius:5px;
   padding: 10px;
+  box-shadow:4px 4px grey;
 }
+
 .submit{
-  background-color: black;
+  background: linear-gradient(black,grey, black);
   color: white;
   width: 100px;
   margin-right: 0;
   margin-left: auto;
+  z-index: 1;
 
 }
 .map{
@@ -333,39 +346,42 @@ footer{
     height: auto;
     max-height: 300px;
   }
+  h3{
+    font-size: 1.5rem;
+  }
 
   /* Menu*/
   .nav {
     display:none;
   }
+
   .navDesk{
     display:flex;
     height: 50px;
     background-color: black;
     justify-content: space-around;
-    vertical-align: middle;
-    margin-top: -5px;margin-bottom: 30px;
-  }
-  .navDesk a{
-    display: block;
-    margin: auto;
+    padding-bottom: 20px;
+    margin-top: -5px;
+    margin-bottom: 30px;
+
   }
   hr{
     display: none;
   }
-.contact {
-  display: flex;
-  flex-direction: row;
-}
-.address {
-  width:30%;
-}
-.map-responsive{
-  width:60%;
-}
+  .contact {
+    display: flex;
+    flex-direction: row;
+  }
+  .address {
+    width:30%;
+  }
+  .map-responsive{
+    width:60%;
+  }
 /*Footer
 -----------------------------------------------------------------------------------*/
   footer{
+    margin-top: 30px;
     height: 16vw;
 
   }
