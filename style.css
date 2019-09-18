@@ -14,7 +14,8 @@ h1, h2, h3{
 }
 h2 {
   text-align: center;
-
+  margin-top: 13%;
+  margin-bottom: 13%;
 }
 /* Philippe : ajout style "Restaurant Japonais" */
 header p {
@@ -126,15 +127,7 @@ hr{
   width: 90%;
   margin: auto;
 }
-/*Restaurant
----------------------------------------------------------------------------------------*/
-.welcome{
-  margin-top: 20px;
 
-}
-.welcome h2{
-  display: initial;
-}
 /* Products
 ----------------------------------------------------------------------------------------*/
 .produits{
@@ -163,19 +156,27 @@ hr{
 
 /*Restaurant
 ---------------------------------------------------------------------------------------*/
-.theChief{
+
+.welcome h2{
+  display: initial;
+  margin-right: 2%;
+  font-size : 18px;
 }
+
+.welcome p {
+  text-align: justify;
+}
+
 #restaurant p {
   text-align : justify;
-}
-
-.theChief{
-
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
 }
 .mainRoom p {
   margin-bottom: 0;
 }
-
 .imgRestaurant{
   width: 100%;
 }
@@ -324,6 +325,15 @@ footer{
 }
 
 @media screen and (min-width: 600px){
+
+  /*ajout rmy pour les h2 (tests sur le margin left)*/
+  h2 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: left;
+    margin-left: 2%;
+  }
+
   /*Banniere*/
 
   .banniere{
@@ -360,6 +370,43 @@ footer{
 .map-responsive{
   width:60%;
 }
+
+/*Welcome
+   -----------------------------------------------------------------------------------*/
+  .welcomeContainer {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 1%; 
+  }
+
+  .welcome h2 {
+    margin-right: 5px;
+    font-size : 22px;
+  }
+  
+/*Restaurant 
+   -----------------------------------------------------------------------------------*/
+
+  .restaurantContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #restaurant p {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .theChief {
+    width: 45%;
+  }
+  .mainRoom {
+    width: 45%;
+  }
+
 /*Footer
 -----------------------------------------------------------------------------------*/
   footer{
