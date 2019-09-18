@@ -10,6 +10,10 @@ main{
 h1, h2, h3{
 }
 
+h2 {
+  text-align: center;
+}
+
 /* Header*/
 header{
   height: 150px;
@@ -105,7 +109,8 @@ h1{
   display: initial;
 }
 /* Products*/
-.produits{
+.products{
+
 }
 .itemProduct{
   color: white;
@@ -130,18 +135,32 @@ h1{
 }
 
 /*Restaurant*/
+
+#restaurant{
+  
+}
+#restaurant p {
+  text-align : justify;
+}
+
 .theChief{
 
 }
-.mainRoom{
-
+.mainRoom p {
+  margin-bottom: 0;
 }
+
 .imgRestaurant{
-
+  width: 100%;
 }
+
+
+
+
+
 
 /*ContactUs*/
-.contact{
+.contactUs{
 
 }
 .form{
@@ -269,6 +288,11 @@ footer{
   .banniere{
     height: 100%;
   }
+
+
+
+
+
   /*Footer*/
 /*footer{
     height: 16vw;
