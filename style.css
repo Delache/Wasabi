@@ -9,12 +9,13 @@ main{
   width: 90%;
 }
 /* modif faites par Philippe : font-family + letter spacing */
-h1, h2, h3, p{
+h1, h2, h3{
   font-family: 'Julee', cursive;
   letter-spacing: 1.2px;
 }
 h2 {
   text-align: center;
+
 }
 /* Philippe : ajout style "Restaurant Japonais" */
 header p {
@@ -40,7 +41,6 @@ header p {
   font-size: 3vw;
 }
 .banniere{
-  height: 250px;
   width: 100%;
   overflow: hidden;
 
@@ -110,8 +110,8 @@ header p {
   margin-left: -15px;
 
 }
-#menu hr{
-  width: 95px;
+hr{
+  width: 50%;
 }
 
 .nav a,.navDesk a, .products a{
@@ -129,7 +129,10 @@ header p {
 }
 /*Restaurant
 ---------------------------------------------------------------------------------------*/
+.welcome{
+  margin-top: 20px;
 
+}
 .welcome h2{
   display: initial;
 }
@@ -330,6 +333,36 @@ footer{
     height: auto;
     max-height: 300px;
   }
+
+  /* Menu*/
+  .nav {
+    display:none;
+  }
+  .navDesk{
+    display:flex;
+    height: 50px;
+    background-color: black;
+    justify-content: space-around;
+    vertical-align: middle;
+    margin-top: -5px;margin-bottom: 30px;
+  }
+  .navDesk a{
+    display: block;
+    margin: auto;
+  }
+  hr{
+    display: none;
+  }
+.contact {
+  display: flex;
+  flex-direction: row;
+}
+.address {
+  width:30%;
+}
+.map-responsive{
+  width:60%;
+}
 /*Footer
 -----------------------------------------------------------------------------------*/
   footer{
@@ -351,34 +384,4 @@ footer{
   .faq a:hover{
     color: silver;
   }
-  /* Menu*/
-  .nav {
-    display:none;
-  }
-  .navDesk{
-    display:flex;
-    height: 50px;
-    background-color: black;
-    justify-content: space-around;
-    vertical-align: middle;
-    margin-top: -5px;margin-bottom: 30px;
-  }
-  .navDesk a{
-    display: block;
-    margin: auto;
-  }
-  /* Philippe : ajout du style "contact"*/
-
-.contact {
-  display: flex;
-  flex-direction: row;
 }
-.address {
-  width:30%;
-}
-.map-responsive{
-  width:60%;
-}
-/* fin des ajouts Philippe*/
-}
-
