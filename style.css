@@ -15,6 +15,8 @@ h1, h2, h3, p{
 }
 h2 {
   text-align: center;
+  margin-top: 13%;
+  margin-bottom: 13%;
 }
 /* Philippe : ajout style "Restaurant Japonais" */
 header p {
@@ -129,12 +131,7 @@ header{
   width: 90%;
   margin: auto;
 }
-/*Restaurant
----------------------------------------------------------------------------------------*/
 
-.welcome h2{
-  display: initial;
-}
 /* Products
 ----------------------------------------------------------------------------------------*/
 .produits{
@@ -163,19 +160,20 @@ header{
 
 /*Restaurant
 ---------------------------------------------------------------------------------------*/
-.theChief{
+
+.welcome h2{
+  display: initial;
 }
 #restaurant p {
   text-align : justify;
-}
-
-.theChief{
-
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
 }
 .mainRoom p {
   margin-bottom: 0;
 }
-
 .imgRestaurant{
   width: 100%;
 }
@@ -326,6 +324,15 @@ footer{
 }
 
 @media screen and (min-width: 600px){
+
+  /*ajout r*/
+  h2 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: left;
+    margin-left: 2%;
+  }
+
   /*Banniere*/
   header{
     height: 374px;
@@ -333,6 +340,33 @@ footer{
   .banniere{
     height: 100%;
   }
+
+  .welcome  {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+   /*Restaurant 
+   -----------------------------------------------------------------------------------*/
+
+   .restaurantContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #restaurant p {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .theChief {
+    width: 45%;
+  }
+  .mainRoom {
+    width: 45%;
+  }
+
 /*Footer
 -----------------------------------------------------------------------------------*/
   footer{
