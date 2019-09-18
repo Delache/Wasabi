@@ -10,7 +10,8 @@ main{
 h1, h2, h3{
 }
 
-/* Header*/
+/* Header
+--------------------------------------------------------------------------------------*/
 header{
   height: 150px;
   margin-bottom: 20px;
@@ -31,7 +32,8 @@ h1{
   margin-left: 1%;
 }
 
-/*Navbar*/
+/*Navbar
+---------------------------------------------------------------------------------------*/
 .nav {
   position: fixed;
   right: 0;
@@ -107,11 +109,14 @@ h1{
   width: 90%;
   margin: auto;
 }
-/*Restaurant*/
+/*Restaurant
+---------------------------------------------------------------------------------------*/
+
 .welcome h2{
   display: initial;
 }
-/* Products*/
+/* Products
+----------------------------------------------------------------------------------------*/
 .produits{
 }
 .itemProduct{
@@ -136,7 +141,8 @@ h1{
   flex: 0.5;
 }
 
-/*Restaurant*/
+/*Restaurant
+---------------------------------------------------------------------------------------*/
 .theChief{
 
 }
@@ -147,14 +153,29 @@ h1{
 
 }
 
-/*ContactUs*/
+/*ContactUs
+----------------------------------------------------------------------------------------*/
 .contact{
-
 }
 .form{
-  border: 1px solid #CCC;
+  display:flex;
+  flex-direction: column;
   margin: 15px;
   margin-right: 25px;
+}
+.form >*{
+  margin-bottom: 15px;
+  border:2px solid grey;
+  border-radius:5px;
+  padding: 10px;
+}
+.submit{
+  background-color: black;
+  color: white;
+  width: 100px;
+  margin-right: 0;
+  margin-left: auto;
+
 }
 .map{
 }
@@ -175,7 +196,8 @@ address{
 
   }*/
 
-/*Footer*/
+/*Footer
+--------------------------------------------------------------------------------------*/
 
 .netWork{
   padding-top: 10px;
@@ -276,11 +298,11 @@ footer{
   .banniere{
     height: 100%;
   }
-  /*Footer*/
-/*footer{
+/*Footer
+-----------------------------------------------------------------------------------*/
+  footer{
     height: 16vw;
-    mi
-  }*/
+  }
   .netWork{
     padding-top: 2vw
   }
