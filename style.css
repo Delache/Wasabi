@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   color:  black;
@@ -7,14 +8,17 @@ main{
   margin: auto;
   width: 90%;
 }
-h1, h2, h3{
+/* modif faites par Philippe : font-family + letter spacing */
+h1, h2, h3, p{
+  font-family: 'Julee', cursive;
+  letter-spacing: 1.2px;
 }
 h2 {
   text-align: center;
 }
-
-h2 {
-  text-align: center;
+/* Philippe : ajout style "Restaurant Japonais" */
+header p {
+  font-family: 'Titillium Web', sans-serif;
 }
 
 /* Header
@@ -180,6 +184,22 @@ header{
 ----------------------------------------------------------------------------------------*/
 .contact{
 }
+/* Philippe : ajout style map-responsive" partie 1 */
+.map-responsive {
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;>
+  height:0;
+  }
+  
+/* Philippe : ajout style map-reponsive partie 2*/
+  .map-responsive iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  }
 .form{
   display:flex;
   flex-direction: column;
@@ -349,5 +369,18 @@ footer{
     display:block;
     margin: auto;
   }
+  /* Philippe : ajout du style "contact"*/ 
+   
+.contact {
+  display: flex;
+  flex-direction: row;
+}
+.address {
+  width:30%;
+}
+.map-responsive{
+  width:60%;
+}
+/* fin des ajouts Philippe*/
 }
 
