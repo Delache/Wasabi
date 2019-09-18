@@ -1,7 +1,34 @@
 body {
   margin: 0;
 }
+main{
+  margin: auto;
+  width: 90%;
+}
+h1, h2, h3{
+}
 
+/* Header*/
+header{
+  height: 150px;
+}
+h1{
+  font-size: 2rem;
+  margin: 0px 0px;
+}
+.banniere{
+  background-image: url(https://i.postimg.cc/9MfTYHXD/banniere.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.ss-titre{
+  font-size: 1rem;
+  margin: 0px 0px;
+  margin-left: 1%;
+}
+
+/*Navbar*/
 .nav {
   position: fixed;
   right: 0;
@@ -14,7 +41,6 @@ body {
   display: flex;
   color: #f00;
 }
-
 #menu {
   background: black;
   width: 200px;
@@ -24,34 +50,27 @@ body {
   border:1px solid black;
   border-radius:20px 0 0 20px;
 }
-
-
 #menu:not(:target) {
   transform: translate3d(180px, 0, 0);
   height: 60px;
   text-align: right;
 }
-
 #menu:target {
   transform: translate3d(0, 0, 0);
   height: 100%;
 }
-
 #visible, #hidden {
   height: 100px;
   text-align: left;
   display: block;
   margin-right: -30px;
 }
-
 #nav:target #visible, #nav:not(:target) #hidden {
   display: none;
 }
-
 #menu:target #visible {
   display: none;
 }
-
 #hidden{
   padding:10px;
 }
@@ -59,14 +78,10 @@ body {
   padding-top: 5px;
   margin-left: -15px;
 }
-
-
-hr{
+#menu hr{
   width: 95px;
 }
-
-
-.nav a, .produits a{
+.nav a, .products a{
   color: white;
   text-decoration: none;
   display: block;
@@ -76,9 +91,10 @@ hr{
   width: 90%;
   margin: auto;
 }
+
+/* Products*/
 .produits{
 }
-
 .itemProduct{
   color: white;
   background-color: black;
@@ -94,7 +110,6 @@ hr{
   display:visible;
   display:flex;
 }
-
 .illustrProduits{
   display: none;
 }
@@ -102,316 +117,163 @@ hr{
   flex: 0.5;
 }
 
+/*Restaurant*/
+.theChief{
 
-.welcomeContent {
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
 }
+.mainRoom{
 
-/* ******************RESTAURANT****************** */
-
-.restaurant {
-
-  	display: block;
 }
-
-.restaurant h2 {
-    display: flex;
-    justify-content: center;
-}
-
-.theChief {
-
-    display: flex;
-    flex-direction: column;
- 
-}
-
-.theChief img {
-
-  	width: 90%;
-  	display: flex;
-  	margin-left: auto;
-  	margin-right: auto;
-}
-
-.theChief p {
-
-  	display: flex;
-  	justify-content: center;  
-}
-
-
-/* **************UP FEATURE***************** */
-
-
-
-#up {
-  	position: fixed;
-  	bottom: 5px;
-  	right:5px;
-  
-  	background : rgb(0, 0, 0);
-  	background : rgba(0, 0, 0, 0.8);
-  
-    width: 50px;
-    height: 50px;
-  
-  
-  	display: block;
-  	text-decoration: none;
-  
-  	-webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-  
-    border-radius: 50%;
-
+.imgRestaurant{
 
 }
 
+/*ContactUs*/
+.contact{
 
-#up:hover {
-	background: rgba(0, 0, 0, 0.9);
 }
-
-.chevron:hover {
- 	opacity: 0.60;
-  	position: fixed;
-  	bottom: 22px;
-  	right: 19px;
-  
-}
-
-.chevron {
-  	opacity: 0.40;
-  	color: white;
-  	position: fixed;
-  	bottom: 13px;
-  	right: 19px;
-    border-style: solid;
-    border-width: 0.10em 0.10em 0 0;
-    content: '';
-    display: block;
-  	padding: 10px;
-    height: 0;
-    transform: rotate(-45deg);
-    vertical-align: top;
-    width: 0;
-  	transition-duration: 0.8s;
-  
-}
-
-
-
-
-
-/* CSS "contactez-nous" */
-
-
-h2 {
-  text-align: center;
-  margin-top:25px;
-}
-
-h3{
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-form {
+.form{
   border: 1px solid #CCC;
   margin: 15px;
   margin-right: 25px;
 }
-
-label {
-  display: inline-block;
-  width : 70px; 
-  text-align: right;
-  margin : 15px;
-}
-
-textarea {
-  margin-top : 15px;
-  width: 175px;
-  height: 60px;
-}
-
-input {
-  width: 175px
-}
-
-
-
 .map{
-  margin: 15px;
 }
-
-.coordonnees{
+address{
   margin: 25px;
 }
 
+/* CSS "contactez-nous" */
 
-.submit {
-  width: 70px;
-  margin-left:210px;
-  margin-bottom: 25px;
- }
 
-@media screen and (min-width:961px){
+/*@media screen and (min-width:961px){
 
   .desktop{
-      display: flex;        
+      display: flex;
   }
   .coordonnees {
       border: 1px solid #CCC;
-           
+
+  }*/
+
+/*Footer*/
+
+.netWork{
+  padding-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+footer{
+  background-color: black;
+  height: 18vw;
+}
+.deliveroo{
+  border-radius: 15px;
+  width: 7vw;
+  height: 7vw;
+  margin-top: 8px;
+}
+
+.facebook{
+  border-radius: 5px;
+  width: 9vw;
+  height: 9vw;
+}
+
+.yelp{
+  width: 7vw;
+  height: 7vw;
+  margin-top: 7px;
+}
+.faq{
+  display: flex;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+.faq a{
+  color: grey;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+/*Bouton retour*/
+#up{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 5px;
+  right:5px;
+  background : rgb(0, 0, 0);
+  background : rgba(0, 0, 0, 0.8);
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+#up:hover{
+  background: rgba(0, 0, 0, 0.9);
+}
+.chevron:hover{
+  opacity: 0.60;
+    position: fixed;
+    bottom: 22px;
+    right: 19px;
+}
+.chevron {
+    opacity: 0.40;
+    color: white;
+    position: fixed;
+    bottom: 13px;
+    right: 19px;
+    border-style: solid;
+    border-width: 0.10em 0.10em 0 0;
+    content: '';
+    display: block;
+    padding: 10px;
+    height: 0;
+    transform: rotate(-45deg);
+    vertical-align: top;
+    width: 0;
+    transition-duration: 0.8s;
+}
+
+@media screen and (min-width: 600px){
+  /*Banniere*/
+  h1{
+    font-size: 5rem;
   }
-  
-  .banniere
-  {
-      background-image: url(https://i.postimg.cc/9MfTYHXD/banniere.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 100%;
-  }
-  
-  header
-  {
-    height: 150px;
-  }
-  
-  h1
-  {
-    font-size: 2rem;
-    margin: 0px 0px;
-  }
-  
-  .ss-titre
-  {
-    font-size: 1rem;
+  .ss-titre{
+    font-size: 2.5rem;
     margin: 0px 0px;
     margin-left: 1%;
   }
-  
-  .reseaux
-  {
-    padding-top: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+  header{
+    height: 374px;
   }
-  
-  footer
-  {
-    background-color: black; 
-    height: 18vw;
+  .banniere{
+    height: 100%;
   }
-  
-  
-  .deliveroo
-  {
-    border-radius: 15px;
-    width: 7vw;
-    height: 7vw;
-    margin-top: 8px;	
+  /*Footer*/
+  footer{
+    height: 16vw;
   }
-  
-  .facebook
-  {
-    border-radius: 5px;
-    width: 9vw;
-    height: 9vw;
-    
+  .netWork{
+    padding-top: 2vw
   }
-  
-  .yelp
-  {
-    width: 7vw;
-    height: 7vw;
-    margin-top: 7PX; 
-  }
-  
-  .faq
-  {
-    display: flex;
-    justify-content: center;
-    margin-top: 4px;
-  
-  }
-  
-  .faq a
-  {
+  .faq a{
     color: grey;
-    font-size: 1.5em;
-    text-decoration: none;
+    font-size: 3vw;
   }
-  
-  
-  
-  
-  @media screen and (min-width: 600px)
-  
-  {
-    h1
-    {
-      font-size: 5rem;
-    }
-  
-    .ss-titre
-    {
-      font-size: 2.5rem;
-      margin: 0px 0px;
-      margin-left: 1%;
-    }
-  
-    header
-    {
-      height: 374px;
-    }
-  
-    .banniere
-    {
-      height: 100%;
-    }
-  
-    footer
-    {
-      height: 16vw;
-    }
-  
-    .reseaux
-    {
-      padding-top: 2vw;
-  
-    }
-  
-    .faq a
-    {
-      color: grey;
-      font-size: 3vw;
-    }
-  
-    .deliveroo:hover
-    {
-      opacity: 0.6;
-    }
-  
-    .facebook:hover
-    {
-      opacity: 0.6;
-    }
-  
-    .yelp:hover
-    {
-      opacity: 0.6; 
-    }
-  
-    .faq a:hover
-    {
-      color: silver;
-    }
+
+  .deliveroo:hover, .facebook:hover, .yelp:hover{
+    opacity: 0.6;
   }
+
+  .faq a:hover{
+    color: silver;
+  }
+}
 

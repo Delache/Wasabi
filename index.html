@@ -1,184 +1,115 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <meta name="description" content="site fictif pour le Wasabi Café">
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>wasabiCafe</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta name="description" content="site fictif pour le Wasabi Café">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>WasabiCafe</title>
 </head>
 
 <body>
-    
-    <header>
-        <!--Bannière Wasabi Café-->
-        <div class="banniere">
-            <div class="titre">
-                <h1>Wasabi Café</h1>
-                <p class="ss-titre">Designer d'expériences</p>
-            </div>
-        </div>
+  <header>
+    <div class="banniere">
+      <h1 id="welcome">Wasabi Café</h1>
+      <p class="ss-titre">Designer d'expériences</p>
+    </div>
+  </header>
 
-    </header>
-            <!-- UP FEATURE (voir css)  
-                
-            <a href="#accueil" id="up"><div class="chevron"></div></a> -->
-
-            
-
-    
-           
-
-   <nav class="nav">
+  <nav class="nav">
     <div id="menu">
       <a href="#menu" id="visible"><img src="Data/hamber1.png" alt="hamber"></a>
       <a href="#" id="hidden">×</a>
       <div class="linkNav">
-        <h2><a href="#">Wasabi</a></h2><hr>
-        <a href="#">Nos produits</a><hr>
-        <a href="#">Le restaurant</a><hr>
-        <a href="#">Contact</a><hr>
+        <h2><a href="#welcome">Wasabi</a></h2><hr>
+        <a href="#products">Nos produits</a><hr>
+        <a href="#restaurant">Le restaurant</a><hr>
+        <a href="#contactUs">Contact</a><hr>
       </div>
-     </div>
+    </div>
   </nav>
-  <main class="main">
 
-
-  <!-- ***************** PRESENTATION *************-->
-
-        <div class="welcome">
-            <div class="welcomeContent">
-                <h2 class="wasabiTitle">Le Wasabi Café</h2>
-                <span class="wasabiSubtitle">Restaurant traditionnel japonais</span>
-                
-                
-                <p>Le <strong>Wasabi Café</strong> est un restaurant qui propose <b>une cuisine japonaise traditionnelle</b> depuis plus de 12 ans dans le quartier Bastide de Bordeaux, proche du pont de pierre.</p>
-                        
-                         
-                        
-                <p>Entre amis ou en famille venez déguster sur place nos sushis, nos makis et autres produits japonais fait maison et à base de produits frais.</p>
-                        
-                         
-                        
-                <p>Sur <b>place ou à emporter</b> commandez nos menus ou nos plats à la carte, ainsi que notre formule rapide du midi, pour les personnes ayant peu de temps pour leur pause déjeuner.</p>
-                        
-                         
-                        
-                <p>Notre restaurant est ouvert du <b>lundi au vendredi</b> midi et soir et le samedi soir. L'été, profitez de la terrasse pour déguster nos menus avec une bonne bière japonnaise.</p>
-            </div>
-        </div>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-    <section class="produits">
-      <h2>Nos Produits</h2>
-
-        <a class="itemProduct" href="#sushisMenu"><h3>Sushis</h3></a>
-        <div id="sushisMenu" class="illustrProduits">
-          <img class="imgMenu" src="Data/sushi.jpg" alt="Sushis1">
-          <img class="imgMenu" src="Data/sushi_dorade.jpg" alt="Sushis2">
-
-        </div>
-
-        <a class="itemProduct" href="#makisMenu"><h3>Makis</h3></a>
-        <div id="makisMenu" class="illustrProduits">
-          <img class="imgMenu" src="Data/maki.jpg" alt="Maki1">
-          <img class="imgMenu" src="Data/maki_avocat.jpg" alt="Makis1">
-        </div>
-
-        <a class="itemProduct" href="#sashimisMenu"><h3>Sashimis</h3></a>
-        <div id="sashimisMenu" class="illustrProduits">
-          <img class="imgMenu" src="Data/sashimi-saumon.jpg" alt="Sashimi1">
-          <img class="imgMenu" src="Data/sashimi-thon.jpg" alt="Sashimi2">
-        </div>
+  <main>
+    <section class="welcome">
+      <p>Le <strong>Wasabi Café</strong> est un restaurant qui propose une <strong>cuisine japonaise traditionnelle</strong> depuis plus de 12 ans dans le quartier Bastide de Bordeaux, proche du pont de pierre.</p>
+      <p>Entre amis ou en famille venez déguster sur place nos sushis, nos makis et autres produits japonais fait maison et à base de produits frais.</p>
+      <p>Sur <strong>place ou à emporter</strong> commandez nos menus ou nos plats à la carte, ainsi que notre formule rapide du midi, pour les personnes ayant peu de temps pour leur pause déjeuner.</p>
+      <p>Notre restaurant est ouvert du <strong>lundi au vendredi</strong> midi et soir et le samedi soir. L'été, profitez de la terrasse pour déguster nos menus avec une bonne bière japonnaise.</p>
     </section>
 
+    <section class="products">
+      <h2>Nos Produits</h2>
+      <a class="itemProduct" href="#sushisMenu"><h3>Sushis</h3></a>
+      <div id="sushisMenu" class="illustrProduits">
+        <img class="imgMenu" src="Data/sushi.jpg" alt="Sushis1">
+        <img class="imgMenu" src="Data/sushi_dorade.jpg" alt="Sushis2">
+      </div>
 
-    <!-- ************************* RESTAURANT **********************-->
-                
-        <section id="restaurantAnchor">
-            <div class="restaurant">
-                <h2>Notre Restaurant</h2>
-                
-                    <div class="theChief">
-                
-                        <img src="chef&team.jpg" alt="Chief_image">
-                        <p>Text paragraph</p>
-                
-                    </div>
-                        
-                    <div class="mainRoom">
-                
-                        <img src="leLieu.jpg" alt="Restaurant_image">
-                        <p>Text paragraph</p>
-                
-                    </div>
-                
-            </div>
-        </section>
+      <a class="itemProduct" href="#makisMenu"><h3>Makis</h3></a>
+      <div id="makisMenu" class="illustrProduits">
+        <img class="imgMenu" src="Data/maki.jpg" alt="Maki1">
+        <img class="imgMenu" src="Data/maki_avocat.jpg" alt="Makis1">
+      </div>
 
+      <a class="itemProduct" href="#sashimisMenu"><h3>Sashimis</h3></a>
+      <div id="sashimisMenu" class="illustrProduits">
+        <img class="imgMenu" src="Data/sashimi-saumon.jpg" alt="Sashimi1">
+        <img class="imgMenu" src="Data/sashimi-thon.jpg" alt="Sashimi2">
+      </div>
+    </section>
 
-    
-    <h2>Contactez-nous</h2>
+    <section id="restaurant">
+      <h2>Notre Restaurant</h2>
+      <div class="theChief">
+        <img class="imgRestaurant" src="Data/chef&team.jpg" alt="Chief_image">
+        <p>Le chef....</p>
+      </div>
+      <div class="mainRoom">
+        <img class="imgRestaurant" src="Data/leLieu.jpg" alt="Restaurant_image">
+        <p>Text paragraph</p>
+      </div>
+    </section>
 
-    <div class="desktop">
-    <div class="coordonnees">
+    <section id="contactUs">
+      <h2>Contactez-nous</h2>
+      <div class="contact">
+        <address>
+          <p>3 place Stalingrad <br> 33100 Bordeaux<br>
+          &#9742; 05 56 32 28 44<br>
+          contact@wasabicafe.fr</p>
+        </address>
 
-        <p>3 place Stalingrad <br> 33100 Bordeaux</p>
-        <p> &#9742; 05 56 32 28 44</p>
-        <p> contact@wasabicafe.fr</p>
-    </div>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2431.058839577333!2d-0.562168853555349!3d44.84023071152204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55262de218d76b%3A0xe199092f37e92166!2sWasabi%20Caf%C3%A9!5e0!3m2!1sfr!2sfr!4v1568704939245!5m2!1sfr!2sfr" width="320" height="auto" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+      </div>
+      <form>
+        <h3>Formulaire de contact</h3>
+        <div class="form">
+          <label for="name">Nom</label>
+          <input id="name" name="name" type="text">
+          <label for="mail">E-mail</label>
+          <input id="mail" name="mail" type="email">
+          <label for="phone">Téléphone</label>
+          <input id="phone" name="phone" type="tel">
+          <label for="objet">Objet</label>
+          <input id="objet" name="objet" type="text">
+          <label for="message">Message</label><textarea></textarea>
+          <input type="submit" value="Envoyer" class="submit">
+        </div>
+      </form>
+    </section>
 
-    <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2431.058839577333!2d-0.562168853555349!3d44.84023071152204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55262de218d76b%3A0xe199092f37e92166!2sWasabi%20Caf%C3%A9!5e0!3m2!1sfr!2sfr!4v1568704939245!5m2!1sfr!2sfr" width="320" height="auto" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-    </div>
-    </div>
-
-    <form>
-            <h3>Formulaire de contact</h3>        
-            <div><label for="name">Nom</label><input id="name" name="name" type="text"></div>
-            <div><label for="mail">E-mail</label><input id="mail" name="mail" type="email" ></div>
-            <div><label for="phone">Téléphone</label><input id="phone" name="phone" type="tel"></div>
-            <div><label for="objet">Objet</label><input id="objet" name="objet" type="text"></div>
-            <div><label for="message">Message</label><textarea></textarea></div>
-            <div><input type="submit" value="Envoyer" class="submit"></div>
-    </form>
-</div> 
-
-
-
-        <!--Footer Wasabi Café-->
-        <footer>
-
-          <div class="reseaux">
-              <div class="1">
-                  <a href="https://deliveroo.fr/fr/menu/bordeaux/bordeaux-la-bastide/wasabi-cafe" title="Deliveroo"><img class="deliveroo" src="https://i.postimg.cc/PJY0mQsJ/deliveroo.png"></a>
-              </div>
-              <div class="2">
-                  <a href="https://fr-fr.facebook.com/pg/wasabicafebdx/posts/" title="Facebook"><img class="facebook" src="https://i.postimg.cc/k5SGRLYd/icons8-facebook-48.png"></a>
-              </div>
-              <div class="3">
-                  <a href="https://www.yelp.fr/biz/wasabi-caf%C3%A9-bordeaux-2" title="Yelp"><img class="yelp" src="https://i.postimg.cc/9QT754P2/yelp.png"></a>
-              </div>
-          </div>
-
-          <div class="faq">
-              <a href="#" title="Des questions?">FAQ</a>
-          </div>
-
-      </footer>
+    <footer>
+      <div class="netWork">
+       <a href="https://deliveroo.fr/fr/menu/bordeaux/bordeaux-la-bastide/wasabi-cafe" title="Deliveroo"><img class="deliveroo" src="https://i.postimg.cc/PJY0mQsJ/deliveroo.png"></a>
+       <a href="https://fr-fr.facebook.com/pg/wasabicafebdx/posts/" title="Facebook"><img class="facebook" src="https://i.postimg.cc/k5SGRLYd/icons8-facebook-48.png"></a>
+       <a href="https://www.yelp.fr/biz/wasabi-caf%C3%A9-bordeaux-2" title="Yelp"><img class="yelp" src="https://i.postimg.cc/9QT754P2/yelp.png"></a>
+     </div>
+     <div class="faq">
+      <a href="#" title="Des questions?">FAQ</a>
+     </div>
+   </footer>
     </main>
   </body>
-
 </html>
-  <!--<nav class="nav">
-    <div id="menu">
-      <a href="#menu" id="visible"><img src="hamber1.png" alt="hamber"></a>
-      <a href="#" id="hidden">×</a>
-      <h2><a href="#">Wasabi</a></h2><hr>
-      <a href="#">Nos produits</a><hr>
-      <a href="#">Le restaurant</a><hr>
-      <a href="#">Contact</a><hr>
-     </div>
-  </nav>-->
-
