@@ -270,5 +270,148 @@ input {
            
   }
   
-
+  .banniere
+  {
+      background-image: url(https://i.postimg.cc/9MfTYHXD/banniere.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+  }
+  
+  header
+  {
+    height: 150px;
+  }
+  
+  h1
+  {
+    font-size: 2rem;
+    margin: 0px 0px;
+  }
+  
+  .ss-titre
+  {
+    font-size: 1rem;
+    margin: 0px 0px;
+    margin-left: 1%;
+  }
+  
+  .reseaux
+  {
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  footer
+  {
+    background-color: black; 
+    height: 18vw;
+  }
+  
+  
+  .deliveroo
+  {
+    border-radius: 15px;
+    width: 7vw;
+    height: 7vw;
+    margin-top: 8px;	
+  }
+  
+  .facebook
+  {
+    border-radius: 5px;
+    width: 9vw;
+    height: 9vw;
+    
+  }
+  
+  .yelp
+  {
+    width: 7vw;
+    height: 7vw;
+    margin-top: 7PX; 
+  }
+  
+  .faq
+  {
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+  
+  }
+  
+  .faq a
+  {
+    color: grey;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+  
+  
+  
+  
+  @media screen and (min-width: 600px)
+  
+  {
+    h1
+    {
+      font-size: 5rem;
+    }
+  
+    .ss-titre
+    {
+      font-size: 2.5rem;
+      margin: 0px 0px;
+      margin-left: 1%;
+    }
+  
+    header
+    {
+      height: 374px;
+    }
+  
+    .banniere
+    {
+      height: 100%;
+    }
+  
+    footer
+    {
+      height: 16vw;
+    }
+  
+    .reseaux
+    {
+      padding-top: 2vw;
+  
+    }
+  
+    .faq a
+    {
+      color: grey;
+      font-size: 3vw;
+    }
+  
+    .deliveroo:hover
+    {
+      opacity: 0.6;
+    }
+  
+    .facebook:hover
+    {
+      opacity: 0.6;
+    }
+  
+    .yelp:hover
+    {
+      opacity: 0.6; 
+    }
+  
+    .faq a:hover
+    {
+      color: silver;
+    }
+  }
 
