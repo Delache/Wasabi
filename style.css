@@ -23,10 +23,7 @@ header p {
 
 /* Header
 --------------------------------------------------------------------------------------*/
-header{
-  height: 150px;
-  margin-bottom: 20px;
-}
+
 #welcome{
   position: absolute;
   top: 5px;
@@ -46,6 +43,7 @@ header{
   height: 250px;
   width: 100%;
   overflow: hidden;
+
 }
 .fuji{
   position: relative;
@@ -191,7 +189,7 @@ header{
   position:relative;>
   height:0;
   }
-  
+
 /* Philippe : ajout style map-reponsive partie 2*/
   .map-responsive iframe {
   left:0;
@@ -327,16 +325,16 @@ footer{
 
 @media screen and (min-width: 600px){
   /*Banniere*/
-  header{
-    height: 374px;
-  }
+
   .banniere{
-    height: 100%;
+    height: auto;
+    max-height: 300px;
   }
 /*Footer
 -----------------------------------------------------------------------------------*/
   footer{
     height: 16vw;
+
   }
   .netWork{
     padding-top: 2vw
@@ -358,19 +356,19 @@ footer{
     display:none;
   }
   .navDesk{
-    margin:-30px 0 30px 0;
     display:flex;
     height: 50px;
     background-color: black;
     justify-content: space-around;
     vertical-align: middle;
+    margin-top: -5px;margin-bottom: 30px;
   }
   .navDesk a{
-    display:block;
+    display: block;
     margin: auto;
   }
-  /* Philippe : ajout du style "contact"*/ 
-   
+  /* Philippe : ajout du style "contact"*/
+
 .contact {
   display: flex;
   flex-direction: row;
