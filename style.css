@@ -18,12 +18,7 @@ h2{
   margin-left: 15%;
   margin-right: 15%;
   text-align: center;
-<<<<<<< HEAD
   border: 1px solid black;
-=======
-  margin-top: 13%;
-  margin-bottom: 13%;
->>>>>>> a137a5bc08132d2f70cb886a41891ec89a70d2a8
 }
 .welcome h2, .nav h2{
   font-family: 'Julee', cursive;
@@ -150,7 +145,15 @@ hr{
   width: 90%;
   margin: auto;
 }
+/*Restaurant
+---------------------------------------------------------------------------------------*/
+.welcome{
+  margin-top: 20px;
 
+}
+.welcome h2{
+  display: initial;
+}
 /* Products
 ----------------------------------------------------------------------------------------*/
 .produits{
@@ -183,34 +186,15 @@ hr{
 
 /*Restaurant
 ---------------------------------------------------------------------------------------*/
-<<<<<<< HEAD
 .theChief, .mainRoom{
   border: 2px solid grey;
   border-radius:5px;
   margin-bottom:10px;
-=======
-
-.welcome h2{
-  display: initial;
-  margin-right: 2%;
-  font-size : 18px;
-}
-
-.welcome p {
-  text-align: justify;
-}
-
-#restaurant p {
-  text-align : justify;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10%;
->>>>>>> a137a5bc08132d2f70cb886a41891ec89a70d2a8
 }
 .theChief p, .mainRoom p{
   padding:0px 20px;
 }
+
 .imgRestaurant{
   width: 100%;
   border-bottom: 2px solid grey;
@@ -263,11 +247,13 @@ address{
 
 
 /*@media screen and (min-width:961px){
+
   .desktop{
       display: flex;
   }
   .coordonnees {
       border: 1px solid #CCC;
+
   }*/
 
 /*Footer
@@ -357,15 +343,6 @@ footer{
 }
 
 @media screen and (min-width: 600px){
-
-  /*ajout rmy pour les h2 (tests sur le margin left)*/
-  h2 {
-    margin-top: 5%;
-    margin-bottom: 5%;
-    text-align: left;
-    margin-left: 2%;
-  }
-
   /*Banniere*/
 
   .banniere{
@@ -394,7 +371,6 @@ footer{
   hr{
     display: none;
   }
-<<<<<<< HEAD
   .contact {
     display: flex;
     flex-direction: row;
@@ -405,55 +381,6 @@ footer{
   .map-responsive{
     width:60%;
   }
-=======
-.contact {
-  display: flex;
-  flex-direction: row;
-}
-.address {
-  width:30%;
-}
-.map-responsive{
-  width:60%;
-}
-
-/*Welcome
-   -----------------------------------------------------------------------------------*/
-  .welcomeContainer {
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    padding: 1%; 
-  }
-
-  .welcome h2 {
-    margin-right: 5px;
-    font-size : 22px;
-  }
-  
-/*Restaurant 
-   -----------------------------------------------------------------------------------*/
-
-  .restaurantContainer {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  #restaurant p {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .theChief {
-    width: 45%;
-  }
-  .mainRoom {
-    width: 45%;
-  }
-
->>>>>>> a137a5bc08132d2f70cb886a41891ec89a70d2a8
 /*Footer
 -----------------------------------------------------------------------------------*/
   footer{
