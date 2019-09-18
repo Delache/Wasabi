@@ -46,18 +46,20 @@ h1{
 }
 #menu {
   background: black;
-  width: 200px;
-  padding: 10px 30px;
+  width: 180px;
+  padding: 0px 50px;
   display: inline-block;
   transition-duration: .2s;
   border:1px solid black;
   border-radius:0 0 0 20px;
+  overflow: hidden;
 
 }
 #menu:not(:target) {
-  transform: translate3d(180px, 0, 0);
-  height: 25px;
+  transform: translate3d(155px, 0, 0);
+  height: 42px; /*Onglet burger*/
   text-align: right;
+  padding: 2px 10px;
 
 }
 #menu:target {
@@ -85,8 +87,9 @@ h1{
 
 }
 #visible{
-}
+  margin-left: -15px;
 
+}
 #menu hr{
   width: 95px;
 }
