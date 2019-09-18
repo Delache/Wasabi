@@ -19,20 +19,29 @@ header{
   height: 150px;
   margin-bottom: 20px;
 }
-h1{
-  font-size: 2rem;
+#welcome{
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-size: 7vw;
   margin: 0px 0px;
-}
-.banniere{
-  background-image: url(https://i.postimg.cc/9MfTYHXD/banniere.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
+
 }
 .ss-titre{
-  font-size: 1rem;
+  position: absolute;
   margin: 0px 0px;
-  margin-left: 1%;
+  top: 8vw;
+  left: 1.5vw;
+  font-size: 3vw;
+}
+.banniere{
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+}
+.fuji{
+  position: relative;
+  width: 100%;
 }
 
 /*Navbar*/
@@ -266,14 +275,6 @@ footer{
 
 @media screen and (min-width: 600px){
   /*Banniere*/
-  h1{
-    font-size: 5rem;
-  }
-  .ss-titre{
-    font-size: 2.5rem;
-    margin: 0px 0px;
-    margin-left: 1%;
-  }
   header{
     height: 374px;
   }
