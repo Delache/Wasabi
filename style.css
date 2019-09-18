@@ -10,6 +10,10 @@ main{
 h1, h2, h3{
 }
 
+h2 {
+  text-align: center;
+}
+
 /* Header*/
 header{
   height: 150px;
