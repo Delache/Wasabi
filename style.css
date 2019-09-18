@@ -51,11 +51,12 @@ h1{
   display: inline-block;
   transition-duration: .2s;
   border:1px solid black;
+  border-radius:0 0 0 20px;
 
 }
 #menu:not(:target) {
   transform: translate3d(180px, 0, 0);
-  height: 60px;
+  height: 25px;
   text-align: right;
 
 }
@@ -80,20 +81,23 @@ h1{
 }
 #hidden{
   padding:10px;
+  margin-left: 180px;
 
 }
 #visible{
-  padding-top: 5px;
 }
 
 #menu hr{
   width: 95px;
 }
 
-.nav a, .products a{
+.nav a,.navDesk a, .products a{
   color: white;
   text-decoration: none;
   display: block;
+}
+.navDesk{
+  display:none;
 }
 
 .main {
@@ -288,6 +292,22 @@ footer{
 
   .faq a:hover{
     color: silver;
+  }
+  /* Menu*/
+  .nav {
+    display:none;
+  }
+  .navDesk{
+    margin:-30px 0 30px 0;
+    display:flex;
+    height: 50px;
+    background-color: black;
+    justify-content: space-around;
+    vertical-align: middle;
+  }
+  .navDesk a{
+    display:block;
+    margin: auto;
   }
 }
 
