@@ -145,15 +145,24 @@ hr{
   width: 90%;
   margin: auto;
 }
-/*Restaurant
----------------------------------------------------------------------------------------*/
-.welcome{
-  margin-top: 20px;
 
-}
+
+/*Presentation
+---------------------------------------------------------------------------------------*/
+
 .welcome h2{
   display: initial;
+  margin-right: 2%;
+  font-size : 18px;
 }
+
+.welcome p {
+  text-align: justify;
+}
+
+
+
+
 /* Products
 ----------------------------------------------------------------------------------------*/
 .produits{
@@ -186,18 +195,19 @@ hr{
 
 /*Restaurant
 ---------------------------------------------------------------------------------------*/
-.theChief, .mainRoom{
-  border: 2px solid grey;
-  border-radius:5px;
-  margin-bottom:10px;
-}
-.theChief p, .mainRoom p{
-  padding:0px 20px;
-}
 
+#restaurant p {
+  text-align : justify;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+}
+.mainRoom p {
+  margin-bottom: 0;
+}
 .imgRestaurant{
   width: 100%;
-  border-bottom: 2px solid grey;
 }
 
 /*ContactUs
@@ -381,6 +391,45 @@ footer{
   .map-responsive{
     width:60%;
   }
+
+/*Welcome
+   -----------------------------------------------------------------------------------*/
+   .welcomeContainer {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 1%; 
+  }
+
+  .welcome h2 {
+    margin-right: 5px;
+    font-size : 22px;
+  }
+  
+/*Restaurant 
+   -----------------------------------------------------------------------------------*/
+
+  .restaurantContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #restaurant p {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .theChief {
+    width: 45%;
+  }
+  .mainRoom {
+    width: 45%;
+  }
+
+
+
 /*Footer
 -----------------------------------------------------------------------------------*/
   footer{
