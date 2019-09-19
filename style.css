@@ -135,10 +135,10 @@ hr{
   display: block;
 }
 .linkNav :nth-child(2){
-  margin-top:60px;
+  margin-top: 60px;
 }
 .navDesk{
-  display:none;
+  display: none;
 }
 
 .main {
@@ -165,8 +165,6 @@ hr{
 
 /* Products
 ----------------------------------------------------------------------------------------*/
-.produits{
-}
 .itemProduct{
   color: white;
   background: linear-gradient(black,grey, black);
@@ -175,16 +173,18 @@ hr{
   display:block;
   z-index: 1;
 }
-#sushisMenu:not(:target){
+#sushisMenu:not(:target), #makisMenu:not(:target), #sashimisMenu:not(:target) {
   display:none;
-}
-#sushisMenu:target, #makisMenu:target,#sashimisMenu:target{
-  display:visible;
-  display:flex;
-  justify-content: space-around;
-}
+ }
+
 .illustrProduits{
-  display: none;
+  display: flex;
+  flex-direction: column;
+}
+.col{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8px;
 }
 .imgMenu{
   margin:0 4px;
@@ -290,7 +290,7 @@ address{
 
 .yelp{
   border-radius: 15px;
-  height: 100%;    
+  height: 100%;
 }
 /*Bouton retour*/
 #up{
@@ -344,7 +344,28 @@ address{
   h3{
     font-size: 1.5rem;
   }
+  /*Produits
+  -------------------------------------------*/
+  #sushisMenu:not(:target), #makisMenu:not(:target), #sashimisMenu:not(:target) {
+    display:flex;
 
+   }
+   .illustrProduits{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin:auto;
+    justify-content: center;
+   }
+  .col{
+      display:visible;
+   }
+   .imgMenu{
+    max-height: 180px;
+    width: auto;
+    margin:5px;
+
+   }
   /* Menu*/
   .nav {
     display:none;
@@ -382,22 +403,22 @@ address{
     margin-right: auto;
     margin-top: 5%;
     margin-bottom: 5%;
-    padding: 1%; 
+    padding: 1%;
   }
 
   .welcome h2 {
     margin-right: 5px;
     font-size : 22px;
   }
-  
-/*Restaurant 
+
+/*Restaurant
    -----------------------------------------------------------------------------------*/
 
   .restaurantContainer {
     display: flex;
     justify-content: space-between;
   }
-  
+
   #restaurant p {
     width: 95%;
     margin-left: auto;
@@ -410,8 +431,6 @@ address{
     width: 45%;
   }
 
-
-
 /*Footer
 -----------------------------------------------------------------------------------*/
   .netWork{
@@ -420,3 +439,4 @@ address{
   .deliveroo:hover, .facebook:hover, .yelp:hover{
     opacity: 0.6;
   }
+}
