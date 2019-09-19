@@ -140,13 +140,46 @@ hr{
 .navDesk{
   display:none;
 }
-
+{
+  display:none;
 .main {
   width: 90%;
   margin: auto;
 }
 /*Restaurant
 ---------------------------------------------------------------------------------------*/
+/*Restaurant
+---------------------------------------------------------------------------------------*/
+.theChief{
+}
+#restaurant p {
+  text-align : justify;
+
+.welcome h2{
+  display: initial;
+  margin-right: 2%;
+  font-size : 18px;
+}
+
+.theChief{
+.welcome p {
+  text-align: justify;
+}
+
+#restaurant p {
+  text-align : justify;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+}
+.mainRoom p {
+  margin-bottom: 0;
+}
+
+.imgRestaurant{
+  width: 100%;
+}
 .welcome{
   margin-top: 20px;
 
@@ -166,16 +199,21 @@ hr{
   display:block;
   z-index: 1;
 }
-#sushisMenu:not(:target){
+#sushisMenu:not(:target), #makisMenu:not(:target), #sashimisMenu:not(:target){
   display:none;
 }
 #sushisMenu:target, #makisMenu:target,#sashimisMenu:target{
   display:visible;
-  display:flex;
   justify-content: space-around;
 }
+.sushi1, .sushi2, .maki1, .maki2, .sashimi1, .sashimi2{
+  display:flex;
+  flex-direction: row;
+  margin:5px;
+}
 .illustrProduits{
-  display: none;
+  display:flex;
+  flex-direction: column;
 }
 .imgMenu{
   margin:0 4px;
@@ -380,6 +418,24 @@ footer{
   }
   .map-responsive{
     width:60%;
+  }
+  /*Restaurant
+ -----------------------------------------------------------------------*/
+ .restaurantContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #restaurant p {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .theChief {
+    width: 45%;
+  }
+  .mainRoom {
+    width: 45%;
   }
 /*Footer
 -----------------------------------------------------------------------------------*/
