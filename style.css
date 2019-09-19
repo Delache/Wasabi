@@ -270,46 +270,28 @@ address{
 --------------------------------------------------------------------------------------*/
 
 .netWork{
-  padding-top: 10px;
-  width: 100%;
+  padding: 15px 0px 15px 0px;
   display: flex;
   justify-content: space-around;
-}
-footer{
+  height: 90px;
   background-color: black;
-  height: 18vw;
-
 }
+
+
 .deliveroo{
   border-radius: 15px;
-  width: 7vw;
-  height: 7vw;
-  margin-top: 8px;
+  height: 100%
 }
 
 .facebook{
-  border-radius: 5px;
-  width: 9vw;
-  height: 9vw;
+  border-radius: 15px;
+  height: 100%;
 }
 
 .yelp{
-  width: 7vw;
-  height: 7vw;
-  margin-top: 7px;
+  border-radius: 15px;
+  height: 100%;    
 }
-.faq{
-  display: flex;
-  justify-content: center;
-  margin-top: 4px;
-}
-
-.faq a{
-  color: grey;
-  font-size: 1.5em;
-  text-decoration: none;
-}
-
 /*Bouton retour*/
 #up{
   width: 50px;
@@ -432,24 +414,11 @@ footer{
 
 /*Footer
 -----------------------------------------------------------------------------------*/
-  footer{
-    margin-top: 30px;
-    height: 16vw;
+footer{
+    height: 90px;
+    background-color: black;
 
   }
-  .netWork{
-    padding-top: 2vw
-  }
-  .faq a{
-    color: grey;
-    font-size: 3vw;
-  }
-
   .deliveroo:hover, .facebook:hover, .yelp:hover{
     opacity: 0.6;
   }
-
-  .faq a:hover{
-    color: silver;
-  }
-}
