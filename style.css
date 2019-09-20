@@ -273,25 +273,18 @@ address{
   padding: 15px 0px 15px 0px;
   display: flex;
   justify-content: space-around;
-  height: 50px;
+  height: 60px;
   background-color: black;
 }
 
 
-.deliveroo{
+.deliveroo, .facebook, .yelp{
   border-radius: 15px;
-  height: 100%;
+  height: 60px;
+  width: 60px;
 }
 
-.facebook{
-  border-radius: 15px;
-  height: 100%;
-}
 
-.yelp{
-  border-radius: 15px;
-  height: 100%;
-}
 /*Bouton retour*/
 #up{
   width: 50px;
@@ -436,6 +429,13 @@ address{
   .netWork{
     height: 70px;
   }
+
+  .deliveroo, .facebook, .yelp{
+  border-radius: 15px;
+  height: 70px;
+  width: 70px;
+}
+
   .deliveroo:hover, .facebook:hover, .yelp:hover{
     opacity: 0.6;
   }
