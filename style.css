@@ -214,10 +214,10 @@ hr{
 ----------------------------------------------------------------------------------------*/
 
 .address{
-  padding-left: 5%;
+  padding-left: 15%;
 }
 .map-responsive {
-  padding-left:5%
+  padding-left:15%;
 }
 
 
@@ -382,13 +382,12 @@ address{
     flex-direction: row;
   }
   .address{
-    margin-left: 15%;
     margin-top: 25px;
-    width: 50%
+    width: 50%;
       }
   .map-responsive{
-    width: 50%;
-    margin-right:15%;
+    width: 100%;
+    margin-right: 8%;
     margin-top: 25px;
   }
 
