@@ -440,7 +440,7 @@ address{
   width: 70px;
 }
 
-  .deliveroo:hover, .facebook:hover, .yelp:hover{
-    opacity: 0.6;
+  .deliveroo:hover, .facebook:hover, .yelp:hover, a:hover, .submit:hover{
+    opacity: 0.8;
   }
 }
