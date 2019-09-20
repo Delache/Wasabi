@@ -280,15 +280,17 @@ address{
 
 .deliveroo{
   border-radius: 15px;
-
+  height: 100%;
 }
 
 .facebook{
   border-radius: 15px;
+  height: 100%;
 }
 
 .yelp{
   border-radius: 15px;
+  height: 100%;
 }
 /*Bouton retour*/
 #up{
