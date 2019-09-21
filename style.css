@@ -241,23 +241,17 @@ legend{
   -------------------------------------------------------------------------------*/
   #sushisMenu:not(:target), #makisMenu:not(:target), #sashimisMenu:not(:target) {
     display:flex;
-
    }
    .illustrProduits{
-    display:flex;
+    display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     margin:auto;
     justify-content: center;
    }
-  .col{
-    display:visible;
-   }
    .imgMenu{
     max-height: 180px;
-    width: auto;
+    width: 50%;
     margin:5px;
-
    }
 
   /* Menu------------------------------------------------------------------------*/
