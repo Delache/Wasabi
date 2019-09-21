@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  color:  black;
   background-color: #f2fffd;
 }
 main{
@@ -8,74 +7,79 @@ main{
   width: 90%;
   margin-bottom: 30px;
 }
-/* modif faites par Philippe : font-family + letter spacing */
-h1, h2, h3{
+h1, h2, h3, .h2v{
   font-family: 'Julee', cursive;
   letter-spacing: 1.2px;
 }
 h2{
+  border: 1px solid black;
+}
+h2, .h2v{
+  font-size: 25px;
+  font-weight: bolder;
   background: white;
   margin-left: 15%;
   margin-right: 15%;
   text-align: center;
-  border: 1px solid black;
 }
 .nav h2{
-  font-family: 'Julee', cursive;
-  font-style: 20px;
-  letter-spacing: 1.2px;
+  font-size: 32px;
   text-align: left;
   background: none;
-  margin:0;
-  border:none;
+  margin: 0;
 }
 p {
   font-family: 'Titillium Web', sans-serif;
   text-align: justify;
 }
+hr{
+  width: 50%;
+}
+a{
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+.main {
+  width: 90%;
+  margin: auto;
+}
 
 
-/* Header
---------------------------------------------------------------------------------------*/
-
+/* Header-------------------------------------------------------------------------*/
 #welcome{
   position: absolute;
   top: 5px;
   left: 10px;
   font-size: 7vw;
-  margin: 0px 0px;
-
+  margin: 0;
 }
 .ss-titre{
   position: absolute;
-  margin: 0px 0px;
   top: 8vw;
   left: 1.5vw;
   font-size: 3vw;
+  margin: 0;
 }
 .banniere{
   width: 100%;
   overflow: hidden;
-
 }
 .fuji{
   position: relative;
   width: 100%;
 }
-
-/*Navbar
----------------------------------------------------------------------------------------*/
+/*Burger Css----------------------------------------------------------------------*/
 .nav {
   position: fixed;
   right: 0;
   top:0;
+  color: #f00;
   height: 100%;
-  font-family: sans-serif;
   font-size: 18px;
   line-height: 2;
   margin:0;
   display: flex;
-  color: #f00;
 }
 #menu {
   background: black;
@@ -84,20 +88,18 @@ p {
   display: inline-block;
   transition-duration: .2s;
   border:1px solid black;
-  border-radius:0 0 0 20px;
+  border-bottom-left-radius: 20px;
   overflow: hidden;
 }
 #menu:not(:target) {
   transform: translate3d(155px, 0, 0);
-  height: 42px; /*Onglet burger*/
+  height: 42px;
   text-align: right;
   padding: 2px 10px;
-
 }
 #menu:target {
   transform: translate3d(0, 0, 0);
   height: 100%;
-
 }
 #visible, #hidden {
   height: 50px;
@@ -105,64 +107,28 @@ p {
   display: block;
   margin-right: -30px;
 }
-#nav:target #visible, #nav:not(:target) #hidden {
+#nav:target #visible, #nav:not(:target) #hidden, #menu:target #visible, .navDesk {
   display: none;
-  border: solid 1px black;
-  border-radius:15px;
-}
-#menu:target #visible {
-  display: none;
-
 }
 #hidden{
-  padding:10px;
+  padding: 10px;
   margin-left: 180px;
-
 }
 #visible{
   margin-left: -15px;
-
-}
-hr{
-  width: 50%;
-}
-
-.nav a,.navDesk a, #products a{
-  color: white;
-  text-decoration: none;
-  display: block;
 }
 .linkNav :nth-child(2){
   margin-top: 60px;
 }
-.navDesk{
-  display: none;
-}
 
-.main {
-  width: 90%;
-  margin: auto;
-}
-
-
-/*Presentation
----------------------------------------------------------------------------------------*/
-
+/*Presentation--------------------------------------------------------------------*/
 .welcome h2{
   display: initial;
   margin-right: 2%;
   font-size : 18px;
 }
 
-.welcome p {
-  text-align: justify;
-}
-
-
-
-
-/* Products
-----------------------------------------------------------------------------------------*/
+/* Products-----------------------------------------------------------------------*/
 .itemProduct{
   color: white;
   background: linear-gradient(black,grey, black);
@@ -173,8 +139,7 @@ hr{
 }
 #sushisMenu:not(:target), #makisMenu:not(:target), #sashimisMenu:not(:target) {
   display:none;
- }
-
+}
 .illustrProduits{
   display: flex;
   flex-direction: column;
@@ -185,17 +150,14 @@ hr{
   margin-bottom: 8px;
 }
 .imgMenu{
-  margin:0 4px;
-  border:2px solid grey;
+  margin: 0 4px;
+  border: 2px solid grey;
   box-shadow: 2px 2px grey;
   border-radius: 30px;
 }
 
-/*Restaurant
----------------------------------------------------------------------------------------*/
-
+/*Restaurant----------------------------------------------------------------------*/
 #restaurant p {
-  text-align : justify;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -208,30 +170,32 @@ hr{
   width: 100%;
 }
 
-/*ContactUs
-----------------------------------------------------------------------------------------*/
-
-.address{
+/*ContactUs-----------------------------------------------------------------------*/
+address{
   padding-left: 15%;
 }
 .map-responsive {
   padding-left:15%;
+  margin-bottom: 30px;
+}
+iframe{
+   width: 83%;
+   height:auto;
+   border: none;
 }
 
-
-.form{
+fieldset{
   display:flex;
   flex-direction: column;
   margin: 15px;
 }
-.form >*{
+fieldset >*:not(legend){
   margin-bottom: 15px;
   border:1px solid grey;
   border-radius:5px;
   padding: 10px;
   box-shadow:4px 4px grey;
 }
-
 .submit{
   background: linear-gradient(black,grey, black);
   color: white;
@@ -239,49 +203,32 @@ hr{
   margin-right: 0;
   margin-left: auto;
   z-index: 1;
-
 }
-.map{
+legend{
+  width: 350px;
 }
-address{
-  margin: 25px;
-}
-
-/* CSS "contactez-nous" */
-
-
-/*@media screen and (min-width:961px){
-
-  .desktop{
-      display: flex;
-  }
-  .coordonnees {
-      border: 1px solid #CCC;
-
-  }*/
-
-/*Footer
---------------------------------------------------------------------------------------*/
-
+/*Footer--------------------------------------------------------------------------*/
 .netWork{
-  padding: 15px 0px 15px 0px;
+  padding: 15px 0px;
   display: flex;
   justify-content: space-around;
   height: 60px;
   background-color: black;
 }
-
-
 .deliveroo, .facebook, .yelp{
   border-radius: 15px;
   height: 60px;
   width: 60px;
 }
 
-
+/*Desktop Version----------------------------------------------------------------*/
 @media screen and (min-width: 600px){
-  /*Banniere*/
+  hr{
+    display: none;
+  }
 
+
+  /*Banniere---------------------------------------------------------------------*/
   .banniere{
     height: auto;
     max-height: 300px;
@@ -289,8 +236,9 @@ address{
   h3{
     font-size: 1.5rem;
   }
+
   /*Produits
-  -------------------------------------------*/
+  -------------------------------------------------------------------------------*/
   #sushisMenu:not(:target), #makisMenu:not(:target), #sashimisMenu:not(:target) {
     display:flex;
 
@@ -303,7 +251,7 @@ address{
     justify-content: center;
    }
   .col{
-      display:visible;
+    display:visible;
    }
    .imgMenu{
     max-height: 180px;
@@ -311,92 +259,79 @@ address{
     margin:5px;
 
    }
-  /* Menu*/
+
+  /* Menu------------------------------------------------------------------------*/
   .nav {
     display:none;
   }
-
   .navDesk{
-    display:flex;
+    display: flex;
     height: 50px;
     background-color: black;
     justify-content: space-around;
     padding-bottom: 20px;
     margin-top: -5px;
     margin-bottom: 30px;
-
   }
-  hr{
-    display: none;
+  .navDesk a:hover{
+    color:skyblue;
   }
 
-  /* Contact Us
-  ----------------------------------------------------------------------------------*/
-
+  /* Contact Us-------------------------------------------------------------------*/
   .contact {
     display: flex;
     flex-direction: row;
   }
-  .address{
+  address{
     margin-top: 25px;
     width: 50%;
-      }
+  }
   .map-responsive{
     width: 100%;
     margin-right: 8%;
     margin-top: 25px;
   }
 
-
-/*Welcome
-   -----------------------------------------------------------------------------------*/
-   .welcomeContainer {
+  /*Welcome-----------------------------------------------------------------------*/
+  .welcomeContainer {
     width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin: 5% auto 5px auto;
     padding: 1%;
   }
-
   .welcome h2 {
     margin-right: 5px;
     font-size : 22px;
   }
 
-/*Restaurant
-   -----------------------------------------------------------------------------------*/
+  /*Restaurant--------------------------------------------------------------------*/
 
   .restaurantContainer {
     display: flex;
     justify-content: space-between;
   }
-
   #restaurant p {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
   }
-  .theChief {
-    width: 45%;
-  }
-  .mainRoom {
+  .theChief, .mainRoom {
     width: 45%;
   }
 
-/*Footer
------------------------------------------------------------------------------------*/
+  /*Footer------------------------------------------------------------------------*/
   .netWork{
     height: 70px;
   }
-
   .deliveroo, .facebook, .yelp{
   border-radius: 15px;
   height: 70px;
   width: 70px;
-}
-
-  .deliveroo:hover, .facebook:hover, .yelp:hover, a:hover, .submit:hover{
+  }
+  .deliveroo:hover, .facebook:hover, .yelp:hover,{
     opacity: 0.9;
+  }
+  .itemProduct:hover, .submit:hover{
+  background: linear-gradient(grey,black,grey);
+  opacity: 0.9;
   }
 }
