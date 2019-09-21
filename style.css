@@ -45,7 +45,6 @@ a{
   margin: auto;
 }
 
-
 /* Header-------------------------------------------------------------------------*/
 #welcome{
   position: absolute;
@@ -69,6 +68,7 @@ a{
   position: relative;
   width: 100%;
 }
+
 /*Burger Css----------------------------------------------------------------------*/
 .nav {
   position: fixed;
@@ -180,22 +180,22 @@ address{
 }
 iframe{
    width: 83%;
-   height:auto;
+   height: auto;
    border: none;
 }
-
-fieldset{
+.form{
   display:flex;
   flex-direction: column;
   margin: 15px;
 }
-fieldset >*:not(legend){
+.form >*{
   margin-bottom: 15px;
   border:1px solid grey;
   border-radius:5px;
   padding: 10px;
   box-shadow:4px 4px grey;
 }
+
 .submit{
   background: linear-gradient(black,grey, black);
   color: white;
